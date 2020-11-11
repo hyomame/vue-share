@@ -20,13 +20,12 @@
 </template>
 
 <script>
-import Firebase from '@/firebase'
 
 export default {
   name: 'Signin',
   methods: {
     signin () {
-      Firebase.signin()
+      console.log('no action')
     }
   }
 }

@@ -16,12 +16,11 @@
 </template>
 
 <script>
-import Firebase from '@/firebase'
 
 export default {
   name: 'Processing',
   created () {
-    const hasRegistered = Firebase.registerAccount()
+    const hasRegistered = ''
 
     hasRegistered.then(() => {
       alert('サインインしました!')

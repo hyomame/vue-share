@@ -7,8 +7,8 @@ import Processing from '@/components/pages/Processing'
 import Signout from '@/components/pages/Signout'
 import About from '@/components/pages/About'
 import Help from '@/components/pages/Help'
-import firebase from 'firebase/app'
-import 'firebase/auth'
+//import firebase from 'firebase/app'
+//import 'firebase/auth'
 
 Vue.use(VueRouter)
 
@@ -63,7 +63,7 @@ const router = new VueRouter({
   routes
 })
 
-router.beforeEach((to, from, next) => {
+/*router.beforeEach((to, from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
   if (requiresAuth) {
     // このルートはログインされているかどうか認証が必要です。
@@ -81,6 +81,6 @@ router.beforeEach((to, from, next) => {
   } else {
     next() // next() を常に呼び出すようにしてください!
   }
-})
+})*/
 
 export default router

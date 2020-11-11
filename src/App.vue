@@ -32,7 +32,6 @@
 
 <script>
 import SideMenu from '@/components/organisms/SideMenu'
-import Firebase from '@/firebase'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -75,10 +74,6 @@ export default {
     '$route' (to, from) {
       this.currentPage = to.name
     }
-  },
-  created () {
-    Firebase.setAuthState()
-    this.currentPage = this.$router.currentRoute.name
   },
   methods: {
     showDrawer() {

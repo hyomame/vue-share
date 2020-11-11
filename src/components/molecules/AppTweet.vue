@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import Firebase from '@/firebase'
 
 export default {
   name: 'AppTweet',
@@ -56,10 +55,10 @@ export default {
   },
   methods: {
     deleteTweet (id) {
-      Firebase.deleteTweet(id)
+      console.log('no action')
     },
     favorite (tweetid, favorite) {
-      Firebase.favorite(tweetid, favorite)
+      console.log('no action')
     }
   }
 }

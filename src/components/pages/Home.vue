@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import Firebase from '@/firebase'
 import TweetForm from '@/components/organisms/TweetForm'
 import Timeline from '@/components/organisms/Timeline'
 
@@ -21,11 +20,6 @@ export default {
   components: {
     TweetForm,
     Timeline
-  },
-  created () {
-    Firebase.updateUsers()
-    Firebase.updateTweets()
-    Firebase.updateCurrentUser()
   }
 }
 </script>

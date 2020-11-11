@@ -45,8 +45,6 @@
 </template>
 
 <script>
-import Firebase from '@/firebase'
-
 import { mapGetters } from 'vuex'
 
 export default {
@@ -67,7 +65,7 @@ export default {
   },
   methods: {
     addTweet () {
-      Firebase.addTweet(this.tweetText)
+      console.log('no action')
       this.tweetText = ''
     }
   }

@@ -35,13 +35,12 @@
 </template>
 
 <script>
-import Firebase from '@/firebase'
 
 export default {
   name: 'Signout',
   methods: {
     signout () {
-      Firebase.signout()
+      console.log('no action')
     }
   }
 }

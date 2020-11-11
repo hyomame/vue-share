@@ -70,7 +70,6 @@
 </template>
 
 <script>
-import Firebase from '@/firebase'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -98,15 +97,14 @@ export default {
     }
   },
   created () {
-    Firebase.updateCurrentUser()
+    console.log('no action')
   },
   methods: {
     getCurrentuserInfo () {
       this.newUsername = this.currentUser.name
     },
     updateUserProfile () {
-      Firebase.updateUserProfile(this.newUsername)
-      Firebase.updateCurrentUser()
+      console.log('no action')
       this.newUsername = ''
       this.dialog = !this.dialog
     }

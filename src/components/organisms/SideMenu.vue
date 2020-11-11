@@ -25,7 +25,6 @@
 </template>
 
 <script>
-import Firebase from '@/firebase'
 import { mapGetters } from 'vuex'
 
 export default {
